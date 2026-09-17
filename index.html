@@ -40,10 +40,11 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
 
     <!-- Introduction -->
-    <section class="box introduction" id="home">
+    <section class="introduction" id="home">
+      <div class="container hero-content">
 
       <div class="intro-text">
 
@@ -71,8 +72,10 @@
         alt="Lujain Okour"
       >
 
+      </div>
     </section>
 
+    <div class="container content-sections">
     <!-- About -->
     <section class="box" id="about">
 
@@ -106,51 +109,40 @@
 
       <h2>Experience</h2>
 
-      <div class="card">
+      <ol class="timeline">
+        <li class="timeline-item"><p class="timeline-date">June 2026 – Present</p><div class="timeline-content">
+        <h3>Data Science &amp; Machine Learning Intern</h3>
+        <p class="details">DStarix Techno Pvt. Ltd · Remote</p>
+        <p>
+          Supporting data science tasks and machine learning
+          workflows within a remote team.
+        </p>
+      </div></li>
+        <li class="timeline-item"><p class="timeline-date">2026 – Present</p><div class="timeline-content">
 
         <h3>Software Development Trainee</h3>
 
-        <p class="details">
-          Orange Coding Academy | 2026 – Present
-        </p>
+        <p class="details">Orange Coding Academy</p>
 
         <p>
           Learning programming, building web pages, and practising
           problem solving through exercises and group projects.
         </p>
 
-      </div>
-
-      <div class="card">
-
-        <h3>Data Science &amp; Machine Learning Intern</h3>
-
-        <p class="details">
-          DStarix Techno Pvt. Ltd | Remote | June 2026 – Present
-        </p>
-
-        <p>
-          Supporting data science tasks and machine learning
-          workflows within a remote team.
-        </p>
-
-      </div>
-
-      <div class="card">
+      </div></li>
+        <li class="timeline-item"><p class="timeline-date">2025 – 2026</p><div class="timeline-content">
 
         <h3>Secretary &amp; Master of Ceremonies</h3>
 
-        <p class="details">
-          IEEE-INU Student Branch | 2025 – 2026
-        </p>
+        <p class="details">IEEE-INU Student Branch</p>
 
         <p>
           Helping organise communications, activities, and reports.
           Served as MC for IEEE MEGAMEET in May 2026.
         </p>
 
-      </div>
-
+      </div></li>
+      </ol>
     </section>
 
     <!-- Qualifications -->
@@ -192,92 +184,30 @@
         <div class="card">
 
           <h3>Technical Skills</h3>
-
-          <ul>
-            <li>HTML and CSS</li>
-            <li>Python and C#</li>
-            <li>Data analysis</li>
-            <li>Machine learning</li>
-            <li>Natural language processing</li>
-          </ul>
-
+<ul class="skills-list">
+  <li>HTML and CSS</li>
+  <li>Python and C#</li>
+  <li>Data analysis</li>
+  <li>Machine learning</li>
+  <li>Natural language processing</li>
+</ul>
         </div>
 
         <div class="card">
 
           <h3>Soft Skills</h3>
 
-          <ul>
-            <li>Teamwork</li>
-            <li>Communication</li>
-            <li>Problem solving</li>
-            <li>Activity coordination</li>
-            <li>Report writing</li>
-          </ul>
+<ul class="skills-list">
+  <li>Teamwork</li>
+  <li>Communication</li>
+  <li>Problem solving</li>
+  <li>Activity coordination</li>
+  <li>Report writing</li>
+</ul>
 
         </div>
 
       </div>
-
-      <h3 class="tools-title">Tools I Use and Explore</h3>
-
-      <div class="tools">
-
-        <div class="tool">
-          <img src="assets/logos/python.svg" alt="">
-          <span>Python</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/csharp.svg" alt="">
-          <span>C#</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/azuresqldatabase.svg" alt="">
-          <span>SQL</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/pytorch.svg" alt="">
-          <span>PyTorch</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/tensorflow.svg" alt="">
-          <span>TensorFlow</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/opencv.svg" alt="">
-          <span>OpenCV</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/pandas.svg" alt="">
-          <span>Pandas</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/numpy.svg" alt="">
-          <span>NumPy</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/git.svg" alt="">
-          <span>Git</span>
-        </div>
-
-        <div class="tool">
-          <img src="assets/logos/docker.svg" alt="">
-          <span>Docker</span>
-        </div>
-
-      </div>
-
-      <p>
-        I am also interested in computer vision and AI agents.
-      </p>
 
     </section>
 
@@ -288,7 +218,8 @@
 
       <div class="row">
 
-        <article class="card">
+        <article class="card project-card">
+          <img class="project-image" src="images/urban-pulse.svg" alt="Illustration of a city road network and traffic forecast" width="800" height="440" loading="lazy">
 
           <p class="label">MACHINE LEARNING</p>
 
@@ -306,7 +237,8 @@
 
         </article>
 
-        <article class="card">
+        <article class="card project-card">
+          <img class="project-image" src="images/nlp-answers.svg" alt="Illustration of a question and a highlighted answer in a document" width="800" height="440" loading="lazy">
 
           <p class="label">NATURAL LANGUAGE PROCESSING</p>
 
@@ -393,47 +325,26 @@
 
     </section>
 
+    </div>
   </main>
 
-  <!-- Contact -->
-  <footer class="container" id="contact">
-
-    <div class="box contact">
-
-      <h2>Contact Me</h2>
-
-      <p>
-        Feel free to contact me about projects or opportunities.
-      </p>
-
-      <a href="mailto:okourlujain@gmail.com">
-        okourlujain@gmail.com
-      </a>
-
-<div class="social-links">
-
-  <a href="https://www.linkedin.com/in/lujain-okour-06903b313/"
-     target="_blank"
-     rel="noopener noreferrer">
-    LinkedIn
-  </a>
-
-  <a href="https://github.com/lujainokour"
-     target="_blank"
-     rel="noopener noreferrer">
-    GitHub
-
-  </a>
-<a href="tel:+962779994475">
-  Phone: 0779994475
-</a>
-</div>
-      <p class="copyright">© 2026 Lujain Okour</p>
-
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <p class="label">GET IN TOUCH</p>
+          <h2>Let’s connect.</h2>
+          <p>Feel free to contact me about projects or opportunities.</p>
+          <a class="footer-email" href="mailto:okourlujain@gmail.com">okourlujain@gmail.com</a>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/lujain-okour-06903b313/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/lujainokour" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="tel:+962779994475" target="_blank" rel="noopener noreferrer"> Phone↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Lujain Okour</p><a href="#home">Back to top ↑</a></div>
     </div>
-
   </footer>
-
 </body>
-
 </html>
